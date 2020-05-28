@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos3.css" class="rel">
+    <link rel="stylesheet" href="waves.css" class="rel">
+    <title>Formulario</title>
+</head> 
+<body> 
+    
+    <div class="container">
+        <h2>ENCRIPTA TU MENSAJE</h2>
+        <div class="formulario">
+            <div class="input-fields">
+                <input type="text" class="input" id="ingTextoHtml" placeholder="Nombre">
+                <input type="number" class="input" id="keyHtml" placeholder="Número">
+                <div class="btn btnCifrar" id="botonE">Cifrar</div>
+                <div class="btn btnDescifrar" id="botonD">Descifrar</div>
+                <div class="btn btnCopiar" id="botonC">Copiar</div>
+            </div>
+
+            <div class="msg">
+                <textarea id="salTextoHtml"></textarea>
+                <div class="btn" id="botonLimpiar">Limpiar</div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script1.js"> </script>
+    <script src="waves.js"></script>
+                
+    <script type="text/javascript">
+    Waves.init();
+    Waves.attach('.btn', ['waves-btn', 'waves-float']);
+    </script>         
+    <script src="copiar.js"></script>
+</body>
+</html>
